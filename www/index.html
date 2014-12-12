@@ -140,7 +140,7 @@ function clickTwitter(){
 		$("#play-bt").click(function(){
 			$("#repro")[0].src="http://199.217.118.10:9774/;stream.mp3";
 			$("#audiosource").load();
-			$("#repro")[0].play();
+			$("#repro")[0].play({ playAudioWhenScreenIsLocked : true });
 			$("#message").text("Cargando...");
 			$("#repro")[0].addEventListener('error', function(e) {
 			   // audio playback failed - show a message saying why
