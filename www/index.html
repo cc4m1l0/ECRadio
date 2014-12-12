@@ -108,10 +108,6 @@ $.mobile.Navigator.prototype.go = function( url, data, noEvents ) {
 </script>
 <!-- script para controlar el reproductor -->
 <script>
-$("a[target='_blank']").click(function(e){
-  e.preventDefault();
-  window.open($(e.currentTarget).attr('href'), '_system', '');
-});
 
 $('#btnTwitter').click(function(){ clickTwitter(); return false; });
 function clickTwitter(){
@@ -313,8 +309,8 @@ html, body
             </div>
             <div style="margin-left:auto;
  margin-right:auto; margin-top:30px; width:auto"><hr color="#F8CE09" size="4">
-                	<a href="https://www.facebook.com/pages/Esperanza-Colombia-Radio/1409307115995120" target="_blank"><img src="images/fbLogo.png" class="imageIconos" width="auto" height="auto" alt="fb-logo"></a>
-                    <a href="https://twitter.com/ecradio1" target="_blank"><img src="images/twLogo.png" width="auto" height="auto" alt="tw-logo"></a>
+                	<a onclick='window.open("https://www.facebook.com/pages/Esperanza-Colombia-Radio/1409307115995120","_system", "location=yes")' href='javascript:void(0)'><img src="images/fbLogo.png" class="imageIconos" width="auto" height="auto" alt="fb-logo"></a>
+                    <a onclick='window.open("https://twitter.com/ecradio1","_system", "location=yes")' href='javascript:void(0)'><img src="images/twLogo.png" width="auto" height="auto" alt="tw-logo"></a>
                     <a href="#page3" data-transition="slide"><img src="images/infoLogo.png" width="auto" height="auto" alt="info-logo"></a>
             </div>
             <!-- Fin Controles de reproducción -->
@@ -329,7 +325,7 @@ html, body
             <ul>
                 <li><a class="ui-btn-active ui-state-persist" href="#page1">EN VIVO</a></li>
                 <li><a href="#page2" data-transition="slide">PROGRAMAS</a></li>
-                <li><a id="btnTwitter" title="clicTwitter" href="http://www.esperanzacolombia.org.co/" data-transition="slide">ESPERANZA</a></li>
+                <li><a onclick='window.open("http://www.esperanzacolombia.org.co/","_system", "location=yes")' href='javascript:void(0)'>ESPERANZA</a></li>
             </ul>
         </div><!-- /navbar -->
 	</div>
@@ -389,7 +385,7 @@ html, body
             <ul>
                 <li><a href="#page1" data-transition="slide" data-direction="reverse">EN VIVO</a></li>
                 <li><a class="ui-btn-active ui-state-persist" href="#page2">PROGRAMAS</a></li>
-                <li><a id="btnTwitter" title="clicTwitter" href="http://www.esperanzacolombia.org.co/" target="_blank">ESPERANZA</a></li>
+                <li><a onclick='window.open("http://www.esperanzacolombia.org.co/","_system", "location=yes")' href='javascript:void(0)'>ESPERANZA</a></li>
             </ul>
         </div><!-- /navbar -->
 	</div>
@@ -413,7 +409,7 @@ html, body
             <ul>
                 <li><a href="#page1" data-transition="slide" data-direction="reverse">EN VIVO</a></li>
                 <li><a href="#page2" data-transition="slide" data-direction="reverse">PROGRAMAS</a></li>
-                <li><a id="btnTwitter" title="clicTwitter" href="http://www.esperanzacolombia.org.co/" data-transition="slide">ESPERANZA</a></li>
+                <li><a onclick='window.open("http://www.esperanzacolombia.org.co/","_system", "location=yes")' href='javascript:void(0)'>ESPERANZA</a></li>
             </ul>
         </div><!-- /navbar -->
 	</div>
